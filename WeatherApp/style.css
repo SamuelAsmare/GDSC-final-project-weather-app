@@ -1,0 +1,177 @@
+body{
+
+    background-image:url("bdr.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition:0.1s ease;
+}
+.container{
+    align-items:center;
+    padding :5%;
+    width:20%;
+    position:absolute;
+    top:10%;
+    left:35%;
+    border-radius:30px;
+    height:60%;
+    backdrop-filter:blur(5px);
+    box-shadow:black 2px 2px 21px 2px;
+    align-items:center;
+    justify-content:center;
+    /* transition:1s ease; */
+    /* animation:sami 1s linear infinite;
+     */
+}
+/* @keyframes sami{
+    from{
+        transform : translateX(9px);
+    }
+    to{
+        transform : translateX(10px);
+    }
+} */
+/* .container:hover{
+   transform:scale(1.01);
+} */
+.logo{
+    position:absolute;
+    width:200px;
+    height:160px;
+    border-radius:20px;
+    animation:sam 2s linear infinite;
+}
+@keyframes sam{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+.title{
+    position:absolute;
+    left:10%;
+    top:10%;
+    font-size:150%;
+    transition:0.5s ease;
+    text-shadow:white  2px 2px 1px;
+    width:auto;
+}
+.title:hover{
+    transform:scale(1.03);
+}
+#cityname{
+    position:absolute;
+    background-color:transparent;
+   border:none;
+   left:10%;
+   top:25%;
+   border-radius:10%;
+   height:3%;
+   width:auto;
+    box-shadow:white 1px 1px 3px 1px;
+    outline:none;
+    margin:2%;
+    padding:2%;
+    font-size:80%;
+    color:rgb(18, 17, 17);
+    transition:1s ease;
+    
+}
+#cityname:hover{
+    transform:scale(1.01);
+    }
+#search{
+    position:absolute;
+    top:35%;
+    background-color:rgb(140, 122, 129);
+    border:none;
+    color:white;
+    border-radius:10px;
+    height:5%;
+    width:50%;
+     transition:0.3s ease;
+}
+#search:hover{
+      transform:scale(1.03);
+}
+#search:active{
+     background-color:rgb(94, 87, 87);
+}
+#temp{
+    position :absolute;
+    top:50%;
+    left:10%;
+    height:50%;
+    width:90%;
+    color:rgb(5, 49, 62);
+    font-size:20px;
+    transition:0.3s ease;
+    filter:brightness(2);
+    
+    }
+#temp:hover{
+   transform:scale(1.03);
+
+}
+#image{
+    position:absolute;
+    right:1%;
+    top: 10%;
+}
+.city{
+      opacity: 0;
+      transform: translateY(-50px);
+      transition: all 1s ease-out;
+    }
+
+    .visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+@media (max-width:767px){
+
+.container{
+    align-items:center;
+    padding :5%;
+    width:70%;
+    position:absolute;
+    top:10%;
+    left:12%;
+    border-radius:30px;
+    height:70%;
+    backdrop-filter:blur(5px);
+    box-shadow:black 2px 2px 21px 2px;
+    align-items:center;
+    justify-content:center;}
+
+#search{
+    position:absolute;
+    top:38%;
+    background-color:rgb(140, 122, 129);
+    border:none;
+    color:white;
+    border-radius:10px;
+    height:5%;
+    width:50%;
+     transition:0.3s ease;
+}
+    
+}
+@media(min-width:768px) and (max-width:1024px){
+    .container{
+    align-items:center;
+    padding :5%;
+    width:28%;
+    position:absolute;
+    top:10%;
+    left:27%;
+    border-radius:30px;
+    height:70%;
+    backdrop-filter:blur(5px);
+    box-shadow:black 2px 2px 21px 2px;
+    align-items:center;
+    justify-content:center;}
+}
